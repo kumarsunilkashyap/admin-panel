@@ -5,7 +5,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { AuthProvider, useAuth } from "./context/AuthContext";
-import Navbar from "./components/Navbar";
+
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
@@ -24,7 +24,7 @@ function App() {
     <AuthProvider>
       <Router>
         <div className="flex flex-col min-h-screen">
-          <Navbar />
+          {/* <Navbar /> */}
           <div className="flex flex-1">
             <Sidebar />
             <main className="flex-1">

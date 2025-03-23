@@ -37,7 +37,7 @@ export const useAuth = () => useContext(AuthContext);
 const mockApiLogin = (email, password) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (email === "admin@example.com" && password === "password123") {
+      if (email === "admin@gmail.com" && password === "password123") {
         resolve({ user: { email, name: "Admin User" } });
       } else {
         reject(new Error("Invalid credentials"));
